@@ -44,6 +44,70 @@
       text-decoration: none;
       font-weight: 500;
     }
+    .product-overview {
+      padding: 78px 20px 36px;
+      background: linear-gradient(180deg, #111111 0%, #161616 100%);
+      text-align: center;
+    }
+    .product-overview h2 {
+      font-size: 32px;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    .product-overview .section-subtitle {
+      max-width: 740px;
+      margin: 0 auto 34px;
+    }
+    .product-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .product-item {
+      min-height: 210px;
+      padding: 30px 28px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.24);
+      text-align: left;
+    }
+    .product-item .tag {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #8fb7ff;
+      margin-bottom: 14px;
+    }
+    .product-item h3 {
+      font-size: 28px;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    .product-item p {
+      color: #cfcfcf;
+      line-height: 1.9;
+      font-size: 16px;
+      max-width: 460px;
+    }
+    .product-item .mini-link {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      color: #f7f7f7;
+      text-decoration: none;
+      font-size: 14px;
+      background: rgba(255,255,255,0.04);
+    }
+    .product-item .mini-link:hover {
+      background: #fff;
+      color: #111;
+    }
     .hero {
       padding: 110px 20px 70px;
       text-align: center;
@@ -296,6 +360,25 @@
       <a href="https://apps.apple.com/app/id6744175002" target="_blank">
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
       </a>
+    </div>
+  </section>
+
+  <section id="products" class="product-overview">
+    <h2>產品總覽</h2>
+    <div class="section-subtitle">黑妞智慧目前同時發展 App 與智慧裝置，先用產品把能力落地，再往更完整的生活場景擴展。</div>
+    <div class="product-grid">
+      <div class="product-item">
+        <div class="tag">APP</div>
+        <h3>行動應用</h3>
+        <p>從倉儲管理、財務管理到未來更多生活工具，讓每個 App 都能直接解決實際問題，並且持續往商業化服務延伸。</p>
+        <a class="mini-link" href="#apps">查看 App 一覽</a>
+      </div>
+      <div class="product-item">
+        <div class="tag">SMART DEVICE</div>
+        <h3>智慧裝置</h3>
+        <p>從燈光、門鎖、窗簾、鐵捲門到監控與移動小幫手，逐步建立能真正進入生活現場的終端控制能力。</p>
+        <a class="mini-link" href="#smart-home">查看智慧家居</a>
+      </div>
     </div>
   </section>
 
