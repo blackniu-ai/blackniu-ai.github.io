@@ -169,6 +169,96 @@
       margin-right: auto;
       line-height: 1.9;
     }
+    .smart-home {
+      padding: 88px 20px 92px;
+      background:
+        radial-gradient(circle at top, rgba(66, 134, 255, 0.18), transparent 45%),
+        linear-gradient(180deg, #fdfefe 0%, #eef5fb 100%);
+    }
+    .smart-home-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 32px;
+      align-items: center;
+    }
+    .smart-home-copy h2 {
+      font-size: clamp(32px, 4.8vw, 46px);
+      color: #143a66;
+      margin-bottom: 12px;
+    }
+    .smart-home-copy .eyebrow {
+      display: inline-block;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      color: #4d79b8;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .smart-home-copy p {
+      font-size: 16px;
+      color: #4a5b70;
+      line-height: 1.9;
+      margin-bottom: 18px;
+      max-width: 620px;
+    }
+    .smart-home-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .smart-home-item {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(95, 140, 190, 0.18);
+      border-radius: 16px;
+      padding: 16px 16px 14px;
+      box-shadow: 0 10px 24px rgba(35, 73, 114, 0.06);
+    }
+    .smart-home-item strong {
+      display: block;
+      color: #183b63;
+      margin-bottom: 6px;
+    }
+    .smart-home-item span {
+      font-size: 14px;
+      color: #5b6b7d;
+      line-height: 1.7;
+    }
+    .smart-home-visual {
+      position: relative;
+      min-height: 520px;
+      border-radius: 28px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at center, rgba(80, 175, 255, 0.36), transparent 42%),
+        linear-gradient(180deg, rgba(255,255,255,0.9), rgba(234,244,255,0.92));
+      border: 1px solid rgba(83, 126, 177, 0.18);
+      box-shadow: 0 24px 50px rgba(74, 110, 156, 0.14);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+    }
+    .smart-home-visual img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.12);
+    }
+    .smart-home-badge {
+      display: inline-block;
+      margin-top: 18px;
+      font-size: 14px;
+      color: #1e5b9d;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid rgba(30, 91, 157, 0.16);
+      padding: 8px 14px;
+      border-radius: 999px;
+    }
     footer {
       text-align: center;
       font-size: 14px;
@@ -235,6 +325,39 @@
       🌟 <strong>黑妞智慧的經營理念：</strong><br>
       將複雜的流程轉化為簡單的操作，讓每一個人都能輕鬆掌握數位工具。<br>
       我們相信，真正的智慧，不是炫技，而是貼近人心、溫柔而實用的設計。
+    </div>
+  </section>
+
+  <section id="smart-home" class="smart-home">
+    <div class="smart-home-wrap">
+      <div class="smart-home-copy">
+        <span class="eyebrow">SMART HOME</span>
+        <h2>黑妞智慧家居</h2>
+        <p>我們正在把黑妞的能力延伸到真正的生活場景，從燈光、門鎖、窗簾、鐵捲門到監控系統，逐步打造可以理解、可以控制、可以落地的智慧家居體驗。</p>
+        <p>目前的方向不是只做概念展示，而是從終端裝置、控制流程、現場驗證開始，一步一步讓 AI 真正走進家裡與工作空間。</p>
+        <div class="smart-home-list">
+          <div class="smart-home-item">
+            <strong>燈光控制</strong>
+            <span>電腦燈、房間燈、工作燈、廁所燈，建立穩定的物理控制流程。</span>
+          </div>
+          <div class="smart-home-item">
+            <strong>門窗裝置</strong>
+            <span>窗戶、窗簾、鐵捲門、門鎖，都是下一階段要落地的終端目標。</span>
+          </div>
+          <div class="smart-home-item">
+            <strong>監控整合</strong>
+            <span>把影像、語音與控制中樞整合起來，形成更完整的居家中控體系。</span>
+          </div>
+          <div class="smart-home-item">
+            <strong>移動小幫手</strong>
+            <span>未來會朝移動型終端裝置發展，讓黑妞不只會「看」，也能「到場」。</span>
+          </div>
+        </div>
+        <div class="smart-home-badge">AI × 物理世界 × 終端裝置</div>
+      </div>
+      <div class="smart-home-visual">
+        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="智慧家居示意圖" />
+      </div>
     </div>
   </section>
 
