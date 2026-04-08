@@ -8,20 +8,22 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      background-color: #ffffff;
-      color: #000000;
+      background:
+        radial-gradient(circle at top, #202020 0%, #111111 45%, #0b0b0b 100%);
+      color: #f4f4f4;
       line-height: 1.6;
     }
     header {
       position: sticky;
       top: 0;
-      background: #ffffff;
-      border-bottom: 1px solid #e0e0e0;
+      background: rgba(12, 12, 12, 0.92);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
       z-index: 1000;
+      backdrop-filter: blur(14px);
     }
     .logo-area {
       display: flex;
@@ -34,10 +36,11 @@
     header h1 {
       font-size: 22px;
       font-weight: bold;
+      color: #ffffff;
     }
     nav a {
       margin-left: 24px;
-      color: #000;
+      color: #f1f1f1;
       text-decoration: none;
       font-weight: 500;
     }
@@ -92,16 +95,18 @@
     }
     .app-gallery {
       padding: 84px 20px 44px;
-      background: #f9f9f9;
+      background:
+        linear-gradient(180deg, #111111 0%, #161616 100%);
       text-align: center;
     }
     .app-gallery h2 {
       font-size: 32px;
       margin-bottom: 12px;
+      color: #ffffff;
     }
     .section-subtitle {
       font-size: 16px;
-      color: #666;
+      color: #b8b8b8;
       margin-bottom: 34px;
     }
     .app-cards {
@@ -115,27 +120,29 @@
     .app-card {
       width: 280px;
       padding: 26px 22px 24px;
-      background: white;
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
       border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
       text-align: left;
     }
     .app-card h3 {
       font-size: 20px;
       margin-bottom: 8px;
+      color: #ffffff;
     }
     .app-tag {
       display: inline-block;
       font-size: 12px;
-      color: #8a5c00;
-      background: #fff4df;
+      color: #ffd79c;
+      background: rgba(255, 206, 134, 0.12);
       padding: 4px 10px;
       border-radius: 999px;
       margin-bottom: 14px;
     }
     .app-card p {
       font-size: 15px;
-      color: #666;
+      color: #cfcfcf;
       margin-bottom: 14px;
       min-height: 72px;
     }
@@ -148,22 +155,22 @@
     .app-link {
       display: inline-block;
       font-size: 14px;
-      color: #111;
+      color: #f5f5f5;
       text-decoration: none;
-      border: 1px solid #ddd;
+      border: 1px solid rgba(255,255,255,0.2);
       border-radius: 999px;
       padding: 8px 14px;
-      background: #fff;
+      background: rgba(255,255,255,0.04);
     }
     .app-link:hover {
-      background: #111;
-      color: #fff;
-      border-color: #111;
+      background: #fff;
+      color: #111;
+      border-color: #fff;
     }
     .brand-philosophy {
       margin-top: 62px;
       font-size: 16px;
-      color: #444;
+      color: #d7d7d7;
       max-width: 700px;
       margin-left: auto;
       margin-right: auto;
@@ -172,8 +179,8 @@
     .smart-home {
       padding: 88px 20px 92px;
       background:
-        radial-gradient(circle at top, rgba(66, 134, 255, 0.18), transparent 45%),
-        linear-gradient(180deg, #fdfefe 0%, #eef5fb 100%);
+        radial-gradient(circle at top, rgba(66, 134, 255, 0.12), transparent 45%),
+        linear-gradient(180deg, #141414 0%, #0f0f0f 100%);
     }
     .smart-home-wrap {
       max-width: 1100px;
@@ -185,20 +192,20 @@
     }
     .smart-home-copy h2 {
       font-size: clamp(32px, 4.8vw, 46px);
-      color: #143a66;
+      color: #ffffff;
       margin-bottom: 12px;
     }
     .smart-home-copy .eyebrow {
       display: inline-block;
       font-size: 13px;
       letter-spacing: 0.12em;
-      color: #4d79b8;
+      color: #8fb7ff;
       text-transform: uppercase;
       margin-bottom: 14px;
     }
     .smart-home-copy p {
       font-size: 16px;
-      color: #4a5b70;
+      color: #c7c7c7;
       line-height: 1.9;
       margin-bottom: 18px;
       max-width: 620px;
@@ -210,20 +217,20 @@
       margin-top: 24px;
     }
     .smart-home-item {
-      background: rgba(255, 255, 255, 0.82);
-      border: 1px solid rgba(95, 140, 190, 0.18);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 16px;
       padding: 16px 16px 14px;
-      box-shadow: 0 10px 24px rgba(35, 73, 114, 0.06);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
     }
     .smart-home-item strong {
       display: block;
-      color: #183b63;
+      color: #ffffff;
       margin-bottom: 6px;
     }
     .smart-home-item span {
       font-size: 14px;
-      color: #5b6b7d;
+      color: #bdbdbd;
       line-height: 1.7;
     }
     .smart-home-visual {
@@ -232,10 +239,10 @@
       border-radius: 28px;
       overflow: hidden;
       background:
-        radial-gradient(circle at center, rgba(80, 175, 255, 0.36), transparent 42%),
-        linear-gradient(180deg, rgba(255,255,255,0.9), rgba(234,244,255,0.92));
-      border: 1px solid rgba(83, 126, 177, 0.18);
-      box-shadow: 0 24px 50px rgba(74, 110, 156, 0.14);
+        radial-gradient(circle at center, rgba(80, 175, 255, 0.18), transparent 42%),
+        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.25);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -247,22 +254,22 @@
       display: block;
       object-fit: cover;
       border-radius: 20px;
-      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.34);
     }
     .smart-home-badge {
       display: inline-block;
       margin-top: 18px;
       font-size: 14px;
-      color: #1e5b9d;
-      background: rgba(255,255,255,0.82);
-      border: 1px solid rgba(30, 91, 157, 0.16);
+      color: #cfe0ff;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
       padding: 8px 14px;
       border-radius: 999px;
     }
     footer {
       text-align: center;
       font-size: 14px;
-      color: #888;
+      color: #9c9c9c;
       padding: 60px 20px 30px;
     }
   </style>
