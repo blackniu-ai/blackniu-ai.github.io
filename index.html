@@ -42,7 +42,7 @@
       font-weight: 500;
     }
     .hero {
-      padding: 100px 20px 60px;
+      padding: 110px 20px 70px;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -70,26 +70,39 @@
       z-index: 1;
     }
     .hero h2 {
-      font-size: 48px;
+      font-size: clamp(40px, 6vw, 56px);
       font-weight: 600;
       margin-bottom: 16px;
+      letter-spacing: 0.04em;
     }
     .hero p {
-      font-size: 20px;
-      color: #ccc;
+      font-size: 18px;
+      color: #d7d7d7;
       margin-bottom: 30px;
+    }
+    .hero-note {
+      font-size: 15px;
+      color: #a9a9a9;
+      margin: 16px auto 34px;
+      max-width: 560px;
+      line-height: 1.8;
     }
     .app-store-badge img {
       height: 60px;
     }
     .app-gallery {
-      padding: 80px 20px 40px;
+      padding: 84px 20px 44px;
       background: #f9f9f9;
       text-align: center;
     }
     .app-gallery h2 {
       font-size: 32px;
-      margin-bottom: 40px;
+      margin-bottom: 12px;
+    }
+    .section-subtitle {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 34px;
     }
     .app-cards {
       display: flex;
@@ -101,27 +114,60 @@
     }
     .app-card {
       width: 280px;
-      padding: 24px;
+      padding: 26px 22px 24px;
       background: white;
       border-radius: 16px;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      text-align: left;
     }
     .app-card h3 {
       font-size: 20px;
       margin-bottom: 8px;
     }
+    .app-tag {
+      display: inline-block;
+      font-size: 12px;
+      color: #8a5c00;
+      background: #fff4df;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
     .app-card p {
       font-size: 15px;
       color: #666;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
+      min-height: 72px;
+    }
+    .app-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .app-link {
+      display: inline-block;
+      font-size: 14px;
+      color: #111;
+      text-decoration: none;
+      border: 1px solid #ddd;
+      border-radius: 999px;
+      padding: 8px 14px;
+      background: #fff;
+    }
+    .app-link:hover {
+      background: #111;
+      color: #fff;
+      border-color: #111;
     }
     .brand-philosophy {
-      margin-top: 60px;
+      margin-top: 62px;
       font-size: 16px;
       color: #444;
       max-width: 700px;
       margin-left: auto;
       margin-right: auto;
+      line-height: 1.9;
     }
     footer {
       text-align: center;
@@ -145,7 +191,10 @@
 
   <section class="hero">
     <h2>讓科技變得溫柔</h2>
-    <p>打造最直覺、最貼心的 App 使用體驗</p>
+    <p>專注打造能真正解決問題的 App，讓使用者一看就懂、一用就上手。</p>
+    <div class="hero-note">
+      黑妞智慧目前已推出倉儲管理與財務管理相關 App，持續朝更完整的產品線與商業化服務前進。
+    </div>
     <div class="app-store-badge">
       <a href="https://apps.apple.com/app/id6744175002" target="_blank">
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
@@ -154,34 +203,38 @@
   </section>
 
   <section id="apps" class="app-gallery">
-    <h2>📱 所有 App 一覽</h2>
+    <h2>📱 App 一覽</h2>
+    <div class="section-subtitle">把複雜流程整理成簡單操作，讓管理更直覺、更有效率。</div>
     <div class="app-cards">
       <div class="app-card">
+        <div class="app-tag">倉儲管理</div>
         <h3>物件管理好幫手</h3>
-        <p>專為倉儲與物件分類管理設計的 iOS App</p>
-        <a href="https://apps.apple.com/app/id6744175002" target="_blank">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height: 44px;">
-        </a>
+        <p>適合倉儲、物件分類與日常管理，協助你快速整理、查找與追蹤資料。</p>
+        <div class="app-links">
+          <a class="app-link" href="https://apps.apple.com/app/id6744175002" target="_blank">前往 App Store</a>
+        </div>
       </div>
       <div class="app-card">
+        <div class="app-tag">倉庫效率</div>
         <h3>懶人倉庫王</h3>
-        <p>一鍵拍照建檔、入庫出庫一手包辦的超簡倉儲 App</p>
-        <a href="https://apps.apple.com/tw/app/%E6%87%B6%E4%BA%BA%E5%80%89%E5%BA%AB%E7%8E%8B/id6746676444" target="_blank">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height: 44px;">
-        </a>
+        <p>一鍵拍照建檔、入庫出庫一手包辦，讓庫存管理更快、更省心。</p>
+        <div class="app-links">
+          <a class="app-link" href="https://apps.apple.com/tw/app/%E6%87%B6%E4%BA%BA%E5%80%89%E5%BA%AB%E7%8E%8B/id6746676444" target="_blank">前往 App Store</a>
+        </div>
       </div>
           <div class="app-card">
+        <div class="app-tag">財務記錄</div>
         <h3>財務管理好幫手</h3>
-        <p>簡單記帳，清楚掌握每一筆收支，讓財務一目了然。</p>
-        <a href="https://apps.apple.com/tw/app/%E8%B2%A1%E5%8B%99%E7%AE%A1%E7%90%86%E5%A5%BD%E5%B9%AB%E6%89%8B/id6747616692" target="_blank">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height: 44px;">
-        </a>
+        <p>簡單記帳、清楚分類，幫你快速掌握每一筆收支與財務狀況。</p>
+        <div class="app-links">
+          <a class="app-link" href="https://apps.apple.com/tw/app/%E8%B2%A1%E5%8B%99%E7%AE%A1%E7%90%86%E5%A5%BD%E5%B9%AB%E6%89%8B/id6747616692" target="_blank">前往 App Store</a>
+        </div>
       </div>
     </div>
     <div class="brand-philosophy">
       🌟 <strong>黑妞智慧的經營理念：</strong><br>
       將複雜的流程轉化為簡單的操作，讓每一個人都能輕鬆掌握數位工具。<br>
-      我們相信，真正的智慧，不是炫技，而是貼近人心的設計與溫柔的實用。
+      我們相信，真正的智慧，不是炫技，而是貼近人心、溫柔而實用的設計。
     </div>
   </section>
 
